@@ -1,0 +1,174 @@
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.pricing-table .btn-primary{
+   
+    border-color: #fff !important;
+    
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-table .btn-primary::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0d6efd;
+    border-color: #fff;
+    color: #fff !important;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+.pricing-table .btn-primary:hover::after{
+    width: 100%;
+}
+.pricing-table .btn-primary:hover{
+    color: #fff !important;
+}
+
+.ptable-top{
+    border-bottom: 3px solid #f5f5f5;
+}
+
+
+.section-title h2{
+position: relative;
+}
+.section-title h2::before{
+    content: " ";
+    width: 65px;
+    height: 2px;
+    background: #3763eb;
+    position: absolute;
+    top: 48px;
+    left: 169px;
+}
+
+.overlay .section-title h2::before{
+    content: " ";
+    width: 65px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 91px;
+    left: 175px;
+}
+
+
+/* Pricing Table Section CSS Start*/
+.pricing-table-section {
+    background: #f6f9fc;
+    
+}
+.pricing-table-section p{
+    color: #3763eb;
+}
+
+.pricing-table{
+    padding: 35px 100px;
+    background: #fff;
+    transition: .5s;
+}
+
+.ptable-top strong{
+    color: #000;
+}
+.ptable-top h1{
+    color: #000;
+}
+
+.ptable-bottom p{
+    color: #808080;
+}
+
+/* Hover Pricing table */
+.pricing-table:hover{
+    background: #5683f1;
+    color: #fff;
+}
+.pricing-table:hover h1{
+    color: #fff;
+}
+.pricing-table:hover strong{
+    color: #fff;
+}
+.pricing-table:hover p{
+    color: #fff;
+}
+
+.pricing-table:hover .btn-primary{
+    color: #3763eb ;
+    background: #fff;
+}
+/* Pricing Table Section CSS End */
+
+
+/* Overlay section CSS Start */
+.overlay{
+    background-image: linear-gradient(rgba(54, 39, 245, .6), rgba(54, 39, 245, .6)),url(./images/free-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+}
+
+.overlay .section-title{
+    padding-top: 130px;
+    padding-bottom: 50px;
+}
+
+
+.overlay .btn-primary{
+    background-color: #fff !important;
+    border-color: #fff;
+    color: #0d6efd;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+}
+.overlay .btn-primary:hover{
+    border-color: #2222c8;
+    color: #fff;
+}
+
+.overlay .btn-primary::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 25px;
+    z-index: -1;
+    transition: .5s;
+}
+.overlay .btn-primary:hover::after{
+    width: 100%;
+}
+/* Overlay section CSS End */
+
+
+/* Newsletter CSS Start */
+.news-letter-card .btn-primary{
+    border-color: #fff !important;
+}
+
+.newsletter-right-card h6{
+    padding-bottom: 175px;
+}
+/* Newsletter CSS End */
